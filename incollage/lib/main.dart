@@ -227,7 +227,7 @@ class HomeScreen extends StatelessWidget {
                               child: Text(
                                 'Error: ${snapshot.error}',
                                 style: const TextStyle(
-                                  color: Colors.red,
+                                  color: AppColors.error500,
                                   fontSize: 10,
                                 ),
                               ),
@@ -352,14 +352,14 @@ class HomeScreen extends StatelessWidget {
                                                     child: Icon(
                                                       Icons
                                                           .broken_image_outlined,
-                                                      color: Colors.grey,
+                                                      color: AppColors.neutral600,
                                                     ),
                                                   );
                                                 },
                                               )
                                             : const Icon(
                                                 Icons.image_not_supported,
-                                                color: Colors.grey,
+                                                color: AppColors.neutral600,
                                               ),
                                         Positioned.fill(
                                           child: DecoratedBox(
